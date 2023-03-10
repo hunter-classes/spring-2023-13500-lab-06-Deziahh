@@ -19,7 +19,7 @@ std::string encryptVigenere(std::string plaintext, std::string keyword) {
             
         } else if (plainchar >= 'A' && plainchar <= 'Z') {
             int plainoffset = plainchar - 'A';
-            int keyoffset = keychar - 'a';
+            int keyoffset = keychar - 'A';
             int encryptedoffset = (plainoffset + keyoffset) % 26;
             char encryptedchar = encryptedoffset + 'A';
             ciphertext += encryptedchar;
